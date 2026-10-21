@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diola Print | Cetak Momen Jadi Kenangan</title>
+<style>
+:root{--cream:#fff8f0;--pink:#d97778;--brown:#4a3028;--soft:#f2e2d4;--muted:#765e53}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,sans-serif;background:var(--cream);color:var(--brown)}
+header{padding:17px 6%;display:flex;justify-content:space-between;align-items:center;background:#fffaf5;position:sticky;top:0;z-index:5;border-bottom:1px solid #eadbd0}.logo{font-size:25px;font-weight:800;letter-spacing:-1px}.logo span{color:var(--pink)}nav{display:flex;gap:20px}nav a{color:var(--brown);text-decoration:none;font-size:14px;font-weight:600}
+.hero{min-height:390px;background:linear-gradient(90deg,rgba(255,248,240,.96),rgba(255,248,240,.82) 42%,rgba(255,248,240,.04)),url('images/banner.png') center/cover;display:flex;align-items:center;padding:55px 7%}.hero-copy{max-width:520px}.eyebrow{color:var(--pink);font-size:12px;letter-spacing:3px;font-weight:bold;text-transform:uppercase}.hero h1{font-family:Georgia,serif;font-size:clamp(38px,6vw,64px);line-height:1.03;margin:13px 0 17px}.hero p{font-size:16px;line-height:1.7;color:var(--muted);max-width:440px}.btn{display:inline-block;border:0;border-radius:30px;background:var(--pink);color:white;padding:13px 22px;font-size:14px;font-weight:bold;text-decoration:none;cursor:pointer;margin-top:22px}.section{padding:58px 7%}.section-head{text-align:center;margin-bottom:30px}.section-head small{color:var(--pink);letter-spacing:2px;text-transform:uppercase;font-weight:bold}.section-head h2{font: bold clamp(28px,4vw,40px) Georgia,serif;margin:9px 0}.section-head p{color:var(--muted);line-height:1.6}.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:#fff;border:1px solid #eee0d5;border-radius:15px;overflow:hidden;box-shadow:0 8px 24px #5335220b}.card img{display:block;width:100%;height:230px;object-fit:cover;background:var(--soft)}.card-body{padding:18px}.card h3{font-size:18px;margin-bottom:8px}.card p{font-size:14px;color:var(--muted);line-height:1.5;min-height:42px}.price{font-weight:bold;color:var(--pink);margin:14px 0 2px}.card .btn{width:100%;margin-top:10px}.about{background:var(--soft);text-align:center}.about p{max-width:650px;margin:12px auto 0;line-height:1.8;color:var(--muted)}.contact{text-align:center}.contact p{margin-top:12px;color:var(--muted)}footer{text-align:center;background:var(--brown);color:#fff4e9;padding:24px;font-size:13px}
+@media(max-width:700px){header{padding:15px 5%;gap:12px}nav{gap:10px}nav a{font-size:12px}.logo{font-size:22px}.hero{min-height:430px;background-position:58% center;padding:42px 6%}.hero-copy{max-width:85%}.hero p{font-size:14px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card img{height:165px}.card-body{padding:12px}.card h3{font-size:16px}.card p{font-size:12px;min-height:54px}.section{padding:42px 5%}.btn{padding:11px 14px;font-size:12px}}
+@media(max-width:380px){.products{grid-template-columns:1fr}.card img{height:220px}.hero-copy{max-width:100%}}
+</style>
+</head>
+<body>
+<header><div class="logo">diola<span>print.</span></div><nav><a href="#produk">Produk</a><a href="#tentang">Tentang</a><a href="#kontak">Kontak</a></nav></header>
+<main>
+<section class="hero"><div class="hero-copy"><div class="eyebrow">Printing · Photo · Custom</div><h1>Cetak Momen,<br>Jadi Kenangan.</h1><p>Dari foto favorit sampai undangan spesial, kami bantu mengubah ide kamu jadi cetakan yang punya cerita.</p><a class="btn" href="#produk">Lihat Produk&nbsp; →</a></div></section>
+<section class="section" id="produk"><div class="section-head"><small>Made with love</small><h2>Produk Pilihan</h2><p>Sentuhan personal untuk setiap momen berharga.</p></div>
+<div class="products">
+<article class="card"><img src="images/polaroid.jpeg" alt="Kolase foto Polaroid"><div class="card-body"><h3>Foto Polaroid</h3><p>Cetak foto bergaya Polaroid untuk menyimpan kenangan.</p><div class="price">Mulai Rp1.000</div><button class="btn" onclick="pesan('Foto Polaroid')">Pesan via WhatsApp</button></div></article>
+<article class="card"><img src="images/foto-strip.jpeg" alt="Foto strip"><div class="card-body"><h3>Photo Strip</h3><p>Foto berurutan dengan tampilan film yang estetik.</p><div class="price">Mulai Rp2.500</div><button class="btn" onclick="pesan('Photo Strip')">Pesan via WhatsApp</button></div></article>
+<article class="card"><img src="images/foto-custom.jpeg" alt="Kolase foto custom"><div class="card-body"><h3>Cetak Foto Custom</h3><p>Pilih gaya kolase dan ukuran sesuai keinginan.</p><div class="price">Mulai Rp1.000</div><button class="btn" onclick="pesan('Cetak Foto Custom')">Pesan via WhatsApp</button></div></article>
+<article class="card"><img src="images/kartu-ucapan.jpeg" alt="Kartu ucapan ulang tahun"><div class="card-body"><h3>Kartu Ucapan</h3><p>Kartu personal untuk ulang tahun dan momen spesial.</p><div class="price">Mulai Rp3.000</div><button class="btn" onclick="pesan('Kartu Ucapan')">Pesan via WhatsApp</button></div></article>
+<article class="card"><img src="images/undangan.jpeg" alt="Contoh undangan merah custom"><div class="card-body"><h3>Undangan Custom</h3><p>Undangan dengan tampilan elegan dan personal.</p><div class="price">Mulai Rp1.500</div><button class="btn" onclick="pesan('Undangan Custom')">Pesan via WhatsApp</button></div></article>
+<article class="card"><img src="images/angpau.jpeg" alt="Amplop dan angpau custom"><div class="card-body"><h3>Angpau Custom</h3><p>Amplop custom dengan warna dan desain menarik.</p><div class="price">Mulai Rp2.000</div><button class="btn" onclick="pesan('Angpau Custom')">Pesan via WhatsApp</button></div></article>
+</div></section>
+<section class="section about" id="tentang"><div class="section-head"><small>Tentang kami</small><h2>Cetakan yang Punya Cerita</h2></div><p>Diola Print hadir untuk membantu kamu mencetak kenangan, berbagi ucapan, dan menyiapkan kebutuhan custom dengan sentuhan yang lebih personal.</p></section>
+<section class="section contact" id="kontak"><div class="section-head"><small>Let's make it memorable</small><h2>Punya Ide yang Mau Dicetak?</h2><p>Tanya dulu juga boleh, langsung hubungi Diola Print.</p><button class="btn" onclick="pesan('Konsultasi Produk')">Chat WhatsApp</button></div></section>
+</main><footer>© 2026 Diola Print · Printing • Photo • Custom</footer>
+<script>
+// GANTI NOMOR DI BAWAH INI. Gunakan kode negara 62, tanpa tanda + atau angka 0 di depan.
+const nomorWhatsApp = "6285624418587";
+function pesan(produk){const teks=`Halo Diola Print! Saya ingin bertanya/memesan ${produk}. Mohon info harga dan cara pemesanannya.`;window.location.href=`https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(teks)}`;}
+</script>
+</body>
+</html>
